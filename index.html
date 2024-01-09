@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Evergreen</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <script type="text/javascript">
+      function searchOnEnter(event) {
+        if (event.key === "Enter") {
+          var searchTerm = document.getElementById("searchInput").value;
+          alert("Searching for: " + searchTerm);
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <div class="logo">
+          <img src="imgs/logo.png" alt="logo" />
+        </div>
+        <nav>
+          <ul>
+            <li><a href="Appointment/app_result.php">Appointments</a></li>
+            <li><a href="Doctor/doc_insert.html">Doctor</a></li>
+            <li><a href="Patients/patients_choise.html">Patients</a></li>
+            <li><a href="medical_record/rec_result.php">Medical Records</a></li>
+          </ul>
+          <div class="search-container">
+            <input
+              type="text"
+              class="search-input"
+              id="searchInput"
+              placeholder="Search"
+              onkeydown="searchOnEnter(event)"
+              size="50"
+            />
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <div class="main">
+      <div class="appointment">
+        <h3><a href="Appointment/app_insert.html" style="font-size: 30px;">BOOK AN APPOINTMENT</a></h3>
+      </div>
+
+      <div class="records">
+        <h3><a href="medical_record/rec_insert.html" >RECORDS</a></h3>
+      </div>
+
+      <div class="reports">
+        <h3><a href="Doctor/doc_result.php">VIEW DOCTORS</a></h3>
+      </div>
+    </div>
+  </body>
+</html>

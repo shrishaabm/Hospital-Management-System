@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="patient.css">
+  </head>
+  <body>
+    <form action="patients_insert.php" method="POST" onsubmit="alert('Form submitted');"> 
+      Patient_id:<input type="text" name="Patient_id" /> 
+      First Name:<input type="text" name="First_Name" /> 
+      Last Name:<input type="text" name="Last_Name" /> 
+      Date Of Birth:<input type="date" name="Date_Of_Birth" /> 
+      Gender:<input type="text" name="Gender" />
+      Contact Number:<input type="number" name="Contact_Number">
+      Problem:<input type="text" name="Problem">
+      Doctor In Charge: <input type="text" name="Doc">
+      Doctor id: <input type="number" name="Doc_id">
+
+      <input type="submit" />
+    </form>
+    <a href="patients_result.php">Click here to View Patients</a>
+    </form>
+  </body>
+</html>
